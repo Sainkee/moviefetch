@@ -13,7 +13,7 @@ export default function MovieCard(props) {
         <div className=" absolute top-0 left-0 right-0 bottom-0 z-100 bg-gradient-to-r from-black/100 via-black/80 to-black/10     "></div>
         <div className="flex absolute top-0 left-0 bottom-0 right-0 p-3 md:p-8 ">
           <div className="flex flex-col w-full gap-5  justify-center md:gap-10 ">
-            <div className="h-[40%] gap-x-10  w-full flex">
+            <div className="h-[40%] gap-x-5 md:gap-x-10  w-full flex">
               <img
                 src={props.image}
                 alt=""
