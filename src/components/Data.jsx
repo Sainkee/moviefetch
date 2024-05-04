@@ -38,6 +38,7 @@ export default function Data() {
           desc ={item.overview}
           release={item.release_date}
         />
+        
       ))}
     </div>
   );

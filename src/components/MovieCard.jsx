@@ -1,5 +1,9 @@
 import { Heart, Share2 ,MessageSquareText } from 'lucide-react';
 export default function MovieCard(props) {
+  const trimmedDesc = props.desc
+  .split(" ")
+  .slice(0, 300)
+  .join(" ");
   return (
     <>
       <div
@@ -24,9 +28,10 @@ export default function MovieCard(props) {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <p className="text-sm text-neutral-500">{props.desc}</p>
+              <p className="text-sm text-neutral-500">{trimmedDesc}
+               </p>
             </div>
-            <div className='flex  gap-5 text-gray-500'>
+            <div className='flex  gap-5  text-gray-500'>
               <Share2/>
               <Heart/>
               <MessageSquareText/>
