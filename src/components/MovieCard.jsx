@@ -26,7 +26,7 @@ export default function MovieCard(props) {
             <div className="w-full md:w-1/2">
               <p className="text-sm text-neutral-500">{props.desc}</p>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex gap-5 text-gray-500'>
               <Share2/>
               <Heart/>
               <MessageSquareText/>
