@@ -7,9 +7,9 @@ export default function MovieCard(props) {
         style={{ backgroundImage: `url(${props.image2})` }}
       >
         <div className=" absolute top-0 left-0 right-0 bottom-0 z-100 bg-gradient-to-r from-black/100 via-black/80 to-black/10     "></div>
-        <div className="flex absolute top-0 left-0 bottom-0 right-0 p-10">
-          <div className="flex flex-col w-full gap-10  ">
-            <div className="h-[50%] gap-x-10  w-full flex">
+        <div className="flex absolute top-0 left-0 bottom-0 right-0 p-3 md:p-8 ">
+          <div className="flex flex-col w-full gap-5  justify-center md:gap-10 ">
+            <div className="h-[40%] gap-x-10  w-full flex">
               <img
                 src={props.image}
                 alt=""
@@ -26,7 +26,7 @@ export default function MovieCard(props) {
             <div className="w-full md:w-1/2">
               <p className="text-sm text-neutral-500">{props.desc}</p>
             </div>
-            <div className='flex gap-5 text-gray-500'>
+            <div className='flex  gap-5 text-gray-500'>
               <Share2/>
               <Heart/>
               <MessageSquareText/>
